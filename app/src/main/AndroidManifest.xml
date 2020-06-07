@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.mybook">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+            android:name=".GlobalApplication"
+            android:allowBackup="true"
+            android:icon="@drawable/icon"
+            android:label="책:깔피"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            android:value="@string/kakao_app_key">
+        <activity android:name=".WritingActivity">
+        </activity>
+        <activity android:name=".LookBookActivity">
+        </activity>
+        <activity
+                android:name=".WriteActivity"
+                android:windowSoftInputMode="adjustNothing">
+        </activity>
+        <activity android:name=".StartLoadingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".FeedActivity"
+                android:windowSoftInputMode="adjustNothing">
+        </activity>
+        <activity android:name=".EnrollActivity"
+                  android:windowSoftInputMode="adjustNothing">
+        </activity>
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+                android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+                android:launchMode="singleTop"
+                android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="ocr"/>
+        <meta-data
+                android:name="com.kakao.sdk.AppKey"
+                android:value="@string/kakao_app_key"/>
+    </application>
+
+</manifest>

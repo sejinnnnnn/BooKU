@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#ed706b</item>
+        <!--상태바 배경색-->
+        <item name="android:statusBarColor">#fddbb5</item>
+        <!--상태바 글자색-->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

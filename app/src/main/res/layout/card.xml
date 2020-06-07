@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="20dp"
+                android:textColor="#181717"
+                android:textSize="20dp"
+                android:id="@+id/Lbname"
+                android:text="책 제목 들어가는 부분"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ns_regular"
+                android:layout_marginBottom="5dp"/>
+        <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    android:textSize="14dp"
+                    android:text="작가 들어가는 부분"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Lauthor"
+                    android:fontFamily="@font/ns_light"
+                    android:textColor="#808080"/>
+            <TextView
+                    android:textSize="14dp"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ns_light"
+                    android:text=" | "
+                    android:id="@+id/lineText"
+                    android:textColor="#808080"/>
+            <TextView
+                    android:textSize="14dp"
+                    android:text="출판사 들어가는 부분"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Lpublisher"
+                    android:fontFamily="@font/ns_light"
+                    android:textColor="#808080"/>
+        </LinearLayout>
+        <ImageView
+                android:src="@drawable/second"
+                android:id="@+id/Lbimg"
+                android:layout_width="415dp"
+                android:layout_height="415dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+        <TextView
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:textColor="#1a1a1a "
+                android:id="@+id/Lcontents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ns_light"
+                android:ellipsize="end"
+                android:text="내용 들어가는 부분"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="5dp"/>
+        <TextView
+                android:textSize="13dp"
+                android:text="좋아요"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/ns_light"
+                android:textColor="#ed706b"
+                android:layout_height="wrap_content" android:id="@+id/likeCount"
+                android:paddingRight="20dp" android:paddingLeft="20dp"
+                android:layout_marginBottom="10dp"/>
+
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+                   android:src="@drawable/pinkline3" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+                   android:layout_marginBottom="10dp"/>]
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".searchpage"
+             android:background="#ffffff">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        <TextView
+                android:fontFamily="@font/ns_extrabold"
+                android:textAlignment="center"
+                android:text="Search"
+                android:textSize="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textColor="#000"
+                android:layout_marginBottom="5dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background=" #fef3e6"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+            <EditText
+                    android:fontFamily="@font/ns_light"
+                    android:id="@+id/search_book"
+                    android:layout_width="280dp"
+                    android:layout_height="match_parent"
+                    android:hint="검색할 책을 입력해주세요."
+                    android:background="@android:color/transparent"
+                    android:textSize="20dp"
+                    android:textColorHint="#3b3838"
+                    android:layout_marginLeft="15dp"/>
+            <ImageButton
+                    android:background="@drawable/mic"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/voice_search"
+                    android:layout_gravity="center" />
+            <ImageView
+                    android:id="@+id/sbtn"
+                    android:layout_width="25dp"
+                    android:layout_height="31dp"
+                    android:src="@drawable/search"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+            />
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/searchview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</FrameLayout>

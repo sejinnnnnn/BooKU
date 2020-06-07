@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".CalendarFragment"
+             >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <TextView
+                android:fontFamily="@font/ns_extrabold"
+                android:textAlignment="center"
+                android:text="Calrendar"
+                android:textSize="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textColor="#000"
+                android:layout_marginBottom="15dp"/>
+        <CalendarView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendar"
+                android:firstDayOfWeek="1"
+        />
+        <TextView
+                android:id="@+id/date_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019년 6월에 읽은 책"
+                android:fontFamily="@font/ns_regular"
+                android:textSize="20dp"
+                android:textColor="#ed706b"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/user_read_book_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</FrameLayout>
